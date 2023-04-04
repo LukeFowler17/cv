@@ -2,82 +2,55 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Luke's Website</title>
+    <title>Luke Fowler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon (3).ico">
   </head>
   <body>
-    <table cell spacing="20">
-        <tr>
-    <hr size="4" noshade>
-    <td><img src="https://th.bing.com/th/id/OIP.mgoF5mOX9OvfIJlstAfzpgHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="BeetleJuice Profile Picture"></td>
-            <td><h1>Luke Fowler</h1>
-                <p><em>Distinguished <strong>Fine</strong> <a href="https://www.coolmathgames.com/">Gentleman</a> </em></p>
-                <p>I am a distinguished and fine young gentleman, who is currently fine and distinguished</p></td>
-        </tr>
-    </table>
-    <hr size="4" noshade>
-    <h2>Education</h2>
-        <h3>
-            <ul>
-                <li>Neil A. Armstrong Elementary School</li>
-                <li>Paul Hadley Middle School</li>
-                <li>Real Jitling Academy</li>
-                <li>Mooresville High School</li>
-            </ul>
-            <hr>
-            <h3>Work Experience</h3>
-            <table cell spacing="10">
-                <thead>
-<tr>
-    <th>Dates</th>
-    <th>Work</th>
-</tr>
-                </thead>
-                <tbody>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+        <h1>I'm Luke</h1>
+        <p>a <span class="pro">pro</span>grammer.</p>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+        <img src="images/mountain.png" alt="mountain-img">
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img class="goggins-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmtVT7kWJiiaeY6_9eLTbk5pGf7hLhKxeQ2Q&usqp=CAU" alt="Goggins">
+        <h2>Howdy Partner.</h2>
+        <p class="booger">I am a fine and distinguished gentleman, who is curerntly fine and distinguished. I want to learn to create my own video games so that Ubisoft doesn't have to.</p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="anton-img" src="data:image/png;base64,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" alt="Anton">
+          <h3>Rainbow Six Seige Platinum 2x</h3>
+          <p>I like to get after it and sometimes am silly.</p>
+        </div>
+        <div class="skill-row">
+          <img class="silly-img" src="data:image/png;base64,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" alt="Cringe">
+          <h3>I'm a beginner programmer looking to become a master problem solver.</h3>
+          <p>Before long, I will be the best programmer on this here side of the Mississip.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you get after it like me.</h3>
+        <p class="contact-message">Think you have what it takes? Can you push P? Ok Yum Yum Yummy? Let's talk about it.</p>
+        <a class="btn" href="lukefowler17@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+    
+    
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/luke-fowler-21419221b/">LinkedIn</a>
+      <a class="footer-link" href="https://www.ebay.com/mys/overview?MyEbay&gbh=1&CurrentPage=MyeBayAllSelling&ssPageName=STRK:ME:LNLK:MESX&source=GBH">eBay</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+      <p class="copyright">© Luke Fowler Industries.</p>
+    </div>
 
-                </tbody>
-                <tfoot>
-
-                </tfoot>
-<tr>
-    <td>2021</td>
-    <td>Maintenance Worker</td>
-</tr>
-<tr>
-    <td>2022</td>
-    <td>Lowes</td>
-</tr>
-            </table>
-            <hr>
-            <h3>Skills</h3>
-<table cell spacing="10">
-    <tr>
-        <td> <table>
-            <tr>
-                <td>Noot Boot Goofin</td>
-                <td>★★★★★</td>
-            </tr>
-            <tr>
-                <td>Bing Chilling</td>
-                <td>★★★★★</td>
-            </tr>
-        </table>
-    </td>
-        <td>
-            <table>
-                <tr>
-                    <td>R6 Y7 Gold 1</td>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <td>Chewsday Innit?</td>
-                    <td>★★★★★</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-            <hr>
-     <a href="Hobbies.html">My Hobbies</a>
-     <a href="Contacts.html">Contact Info</a>
+    </div>
   </body>
 </html>
